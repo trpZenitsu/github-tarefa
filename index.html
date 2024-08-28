@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <div id="paisagem">
+            <div id="ab">
+            <div id="personagem">
+            </div>
+            <div id="personagem1">
+            </div>
+            <div id="personagem2">
+            </div>
+            </div>
+            <button onclick="mostrarCap()">capivara</button>
+            <button onclick="removeCap()">remover capivara</button>
+            <button onclick="mostrarCaps()">capivarias</button>
+            <button onclick="removeCaps()">remover capivarias</button>
+      </div>
+      <div id="ba">
+      <button onclick="mostrarpaisa()">paisagem</button>
+      <button onclick="removepaisa()">remover paisagem</button>
+</div>
+</body>
+<script>
+      function mostrarCap(){
+             let capivara = document.querySelector('#personagem')
+             capivara.classList.add('capivara')
+      }
+      function removeCap(){
+             let capivara = document.querySelector('#personagem')
+             capivara.classList.remove('capivara')
+      }
+      function mostrarCaps(){
+             let capivarias = document.querySelector('#personagem1')
+             let capivarias1 = document.querySelector('#personagem2')
+             capivarias.classList.add('capivarias1')
+             capivarias1.classList.add('capivarias2')
+      }
+      function removeCaps(){
+             let capivarias = document.querySelector('#personagem1')
+             let capivarias1 = document.querySelector('#personagem2')
+             capivarias.classList.remove('capivarias1')
+             capivarias1.classList.remove('capivarias2')
+      }
+      function mostrarpaisa(){
+             let paisagem = document.querySelector('#paisagem')
+             paisagem.classList.add('paisagem')
+      }
+      function removepaisa(){
+             let paisagem = document.querySelector('#paisagem')
+             paisagem.classList.remove('paisagem')
+      }
+</script>
+</html>
